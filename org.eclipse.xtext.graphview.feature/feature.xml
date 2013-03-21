@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.xtext.graphview.feature"
-      label="Feature"
-      version="1.0.0.qualifier"
+      label="GraphView"
+      version="1.0.1.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <description url="http://www.example.com/description">
@@ -17,9 +17,24 @@
       [Enter License Description here.]
    </license>
 
+   <url>
+      <discovery url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/release_0.8/"/>
+      <discovery url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+   </url>
+
    <requires>
       <import feature="org.eclipse.gef" version="3.7.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.xtext.sdk" version="2.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.xtext.sdk" version="2.3.1" match="equivalent"/>
+      <import plugin="net.ogdf.ogml"/>
+      <import plugin="net.ogdf.bin"/>
+      <import plugin="de.cau.cs.kieler.kiml.ogdf"/>
+      <import plugin="de.cau.cs.kieler.kiml"/>
+      <import plugin="de.cau.cs.kieler.core.kgraph"/>
+      <import plugin="de.cau.cs.kieler.core"/>
+      <import plugin="de.cau.cs.kieler.kiml.graphviz.layouter"/>
+      <import plugin="de.cau.cs.kieler.kiml.graphviz.dot"/>
+      <import feature="de.cau.cs.kieler.kiml.graphviz.feature" version="0.7.1.qualifier"/>
+      <import feature="de.cau.cs.kieler.kiml.ogdf.feature" version="0.5.1.qualifier"/>
    </requires>
 
    <plugin
@@ -73,61 +88,6 @@
 
    <plugin
          id="org.eclipse.xtext.graphview.style.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.kiml.graphviz.dot"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.kiml.graphviz.layouter"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.core.kgraph"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.kiml"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.cau.cs.kieler.kiml.ogdf"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="net.ogdf.bin"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="net.ogdf.ogml"
          download-size="0"
          install-size="0"
          version="0.0.0"
