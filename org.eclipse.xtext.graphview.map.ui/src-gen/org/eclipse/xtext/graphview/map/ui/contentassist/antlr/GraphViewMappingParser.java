@@ -41,12 +41,13 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEdgeEndMappingAccess().getAlternatives_0(), "rule__EdgeEndMapping__Alternatives_0");
 					put(grammarAccess.getMappingCallAccess().getAlternatives_0(), "rule__MappingCall__Alternatives_0");
 					put(grammarAccess.getXAssignmentAccess().getAlternatives(), "rule__XAssignment__Alternatives");
+					put(grammarAccess.getOpMultiAssignAccess().getAlternatives(), "rule__OpMultiAssign__Alternatives");
 					put(grammarAccess.getOpEqualityAccess().getAlternatives(), "rule__OpEquality__Alternatives");
 					put(grammarAccess.getXRelationalExpressionAccess().getAlternatives_1(), "rule__XRelationalExpression__Alternatives_1");
 					put(grammarAccess.getOpCompareAccess().getAlternatives(), "rule__OpCompare__Alternatives");
 					put(grammarAccess.getOpOtherAccess().getAlternatives(), "rule__OpOther__Alternatives");
-					put(grammarAccess.getOpOtherAccess().getAlternatives_3_1(), "rule__OpOther__Alternatives_3_1");
-					put(grammarAccess.getOpOtherAccess().getAlternatives_4_1(), "rule__OpOther__Alternatives_4_1");
+					put(grammarAccess.getOpOtherAccess().getAlternatives_5_1(), "rule__OpOther__Alternatives_5_1");
+					put(grammarAccess.getOpOtherAccess().getAlternatives_6_1(), "rule__OpOther__Alternatives_6_1");
 					put(grammarAccess.getOpAddAccess().getAlternatives(), "rule__OpAdd__Alternatives");
 					put(grammarAccess.getOpMultiAccess().getAlternatives(), "rule__OpMulti__Alternatives");
 					put(grammarAccess.getXUnaryOperationAccess().getAlternatives(), "rule__XUnaryOperation__Alternatives");
@@ -56,11 +57,13 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXMemberFeatureCallAccess().getAlternatives_1_1_3_1(), "rule__XMemberFeatureCall__Alternatives_1_1_3_1");
 					put(grammarAccess.getXPrimaryExpressionAccess().getAlternatives(), "rule__XPrimaryExpression__Alternatives");
 					put(grammarAccess.getXLiteralAccess().getAlternatives(), "rule__XLiteral__Alternatives");
+					put(grammarAccess.getXCollectionLiteralAccess().getAlternatives(), "rule__XCollectionLiteral__Alternatives");
 					put(grammarAccess.getXSwitchExpressionAccess().getAlternatives_2(), "rule__XSwitchExpression__Alternatives_2");
 					put(grammarAccess.getXExpressionInsideBlockAccess().getAlternatives(), "rule__XExpressionInsideBlock__Alternatives");
 					put(grammarAccess.getXVariableDeclarationAccess().getAlternatives_1(), "rule__XVariableDeclaration__Alternatives_1");
 					put(grammarAccess.getXVariableDeclarationAccess().getAlternatives_2(), "rule__XVariableDeclaration__Alternatives_2");
 					put(grammarAccess.getXFeatureCallAccess().getAlternatives_4_1(), "rule__XFeatureCall__Alternatives_4_1");
+					put(grammarAccess.getFeatureCallIDAccess().getAlternatives(), "rule__FeatureCallID__Alternatives");
 					put(grammarAccess.getIdOrSuperAccess().getAlternatives(), "rule__IdOrSuper__Alternatives");
 					put(grammarAccess.getXConstructorCallAccess().getAlternatives_4_1(), "rule__XConstructorCall__Alternatives_4_1");
 					put(grammarAccess.getXBooleanLiteralAccess().getAlternatives_1(), "rule__XBooleanLiteral__Alternatives_1");
@@ -72,6 +75,7 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getJvmArgumentTypeReferenceAccess().getAlternatives(), "rule__JvmArgumentTypeReference__Alternatives");
 					put(grammarAccess.getJvmWildcardTypeReferenceAccess().getAlternatives_2(), "rule__JvmWildcardTypeReference__Alternatives_2");
 					put(grammarAccess.getJvmTypeParameterAccess().getAlternatives_1(), "rule__JvmTypeParameter__Alternatives_1");
+					put(grammarAccess.getXImportDeclarationAccess().getAlternatives_1(), "rule__XImportDeclaration__Alternatives_1");
 					put(grammarAccess.getDiagramMappingAccess().getGroup(), "rule__DiagramMapping__Group__0");
 					put(grammarAccess.getDiagramMappingAccess().getGroup_8(), "rule__DiagramMapping__Group_8__0");
 					put(grammarAccess.getImportAccess().getGroup(), "rule__Import__Group__0");
@@ -115,12 +119,13 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXOtherOperatorExpressionAccess().getGroup_1(), "rule__XOtherOperatorExpression__Group_1__0");
 					put(grammarAccess.getXOtherOperatorExpressionAccess().getGroup_1_0(), "rule__XOtherOperatorExpression__Group_1_0__0");
 					put(grammarAccess.getXOtherOperatorExpressionAccess().getGroup_1_0_0(), "rule__XOtherOperatorExpression__Group_1_0_0__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_3(), "rule__OpOther__Group_3__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_3_1_0(), "rule__OpOther__Group_3_1_0__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_3_1_0_0(), "rule__OpOther__Group_3_1_0_0__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_4(), "rule__OpOther__Group_4__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_4_1_0(), "rule__OpOther__Group_4_1_0__0");
-					put(grammarAccess.getOpOtherAccess().getGroup_4_1_0_0(), "rule__OpOther__Group_4_1_0_0__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_2(), "rule__OpOther__Group_2__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_5(), "rule__OpOther__Group_5__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_5_1_0(), "rule__OpOther__Group_5_1_0__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_5_1_0_0(), "rule__OpOther__Group_5_1_0_0__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_6(), "rule__OpOther__Group_6__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_6_1_0(), "rule__OpOther__Group_6_1_0__0");
+					put(grammarAccess.getOpOtherAccess().getGroup_6_1_0_0(), "rule__OpOther__Group_6_1_0_0__0");
 					put(grammarAccess.getXAdditiveExpressionAccess().getGroup(), "rule__XAdditiveExpression__Group__0");
 					put(grammarAccess.getXAdditiveExpressionAccess().getGroup_1(), "rule__XAdditiveExpression__Group_1__0");
 					put(grammarAccess.getXAdditiveExpressionAccess().getGroup_1_0(), "rule__XAdditiveExpression__Group_1_0__0");
@@ -146,6 +151,12 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXMemberFeatureCallAccess().getGroup_1_1_3(), "rule__XMemberFeatureCall__Group_1_1_3__0");
 					put(grammarAccess.getXMemberFeatureCallAccess().getGroup_1_1_3_1_1(), "rule__XMemberFeatureCall__Group_1_1_3_1_1__0");
 					put(grammarAccess.getXMemberFeatureCallAccess().getGroup_1_1_3_1_1_1(), "rule__XMemberFeatureCall__Group_1_1_3_1_1_1__0");
+					put(grammarAccess.getXSetLiteralAccess().getGroup(), "rule__XSetLiteral__Group__0");
+					put(grammarAccess.getXSetLiteralAccess().getGroup_3(), "rule__XSetLiteral__Group_3__0");
+					put(grammarAccess.getXSetLiteralAccess().getGroup_3_1(), "rule__XSetLiteral__Group_3_1__0");
+					put(grammarAccess.getXListLiteralAccess().getGroup(), "rule__XListLiteral__Group__0");
+					put(grammarAccess.getXListLiteralAccess().getGroup_3(), "rule__XListLiteral__Group_3__0");
+					put(grammarAccess.getXListLiteralAccess().getGroup_3_1(), "rule__XListLiteral__Group_3_1__0");
 					put(grammarAccess.getXClosureAccess().getGroup(), "rule__XClosure__Group__0");
 					put(grammarAccess.getXClosureAccess().getGroup_0(), "rule__XClosure__Group_0__0");
 					put(grammarAccess.getXClosureAccess().getGroup_0_0(), "rule__XClosure__Group_0_0__0");
@@ -216,6 +227,7 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getJvmTypeReferenceAccess().getGroup_0(), "rule__JvmTypeReference__Group_0__0");
 					put(grammarAccess.getJvmTypeReferenceAccess().getGroup_0_1(), "rule__JvmTypeReference__Group_0_1__0");
 					put(grammarAccess.getJvmTypeReferenceAccess().getGroup_0_1_0(), "rule__JvmTypeReference__Group_0_1_0__0");
+					put(grammarAccess.getArrayBracketsAccess().getGroup(), "rule__ArrayBrackets__Group__0");
 					put(grammarAccess.getXFunctionTypeRefAccess().getGroup(), "rule__XFunctionTypeRef__Group__0");
 					put(grammarAccess.getXFunctionTypeRefAccess().getGroup_0(), "rule__XFunctionTypeRef__Group_0__0");
 					put(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_1(), "rule__XFunctionTypeRef__Group_0_1__0");
@@ -229,6 +241,8 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getJvmLowerBoundAccess().getGroup(), "rule__JvmLowerBound__Group__0");
 					put(grammarAccess.getJvmTypeParameterAccess().getGroup(), "rule__JvmTypeParameter__Group__0");
 					put(grammarAccess.getJvmTypeParameterAccess().getGroup_1_0(), "rule__JvmTypeParameter__Group_1_0__0");
+					put(grammarAccess.getXImportDeclarationAccess().getGroup(), "rule__XImportDeclaration__Group__0");
+					put(grammarAccess.getXImportDeclarationAccess().getGroup_1_0(), "rule__XImportDeclaration__Group_1_0__0");
 					put(grammarAccess.getDiagramMappingAccess().getImportsAssignment_0(), "rule__DiagramMapping__ImportsAssignment_0");
 					put(grammarAccess.getDiagramMappingAccess().getNameAssignment_2(), "rule__DiagramMapping__NameAssignment_2");
 					put(grammarAccess.getDiagramMappingAccess().getTypeGuardAssignment_4(), "rule__DiagramMapping__TypeGuardAssignment_4");
@@ -297,6 +311,10 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsAssignment_1_1_3_1_1_0(), "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0");
 					put(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsAssignment_1_1_3_1_1_1_1(), "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1");
 					put(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsAssignment_1_1_4(), "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4");
+					put(grammarAccess.getXSetLiteralAccess().getElementsAssignment_3_0(), "rule__XSetLiteral__ElementsAssignment_3_0");
+					put(grammarAccess.getXSetLiteralAccess().getElementsAssignment_3_1_1(), "rule__XSetLiteral__ElementsAssignment_3_1_1");
+					put(grammarAccess.getXListLiteralAccess().getElementsAssignment_3_0(), "rule__XListLiteral__ElementsAssignment_3_0");
+					put(grammarAccess.getXListLiteralAccess().getElementsAssignment_3_1_1(), "rule__XListLiteral__ElementsAssignment_3_1_1");
 					put(grammarAccess.getXClosureAccess().getDeclaredFormalParametersAssignment_1_0_0_0(), "rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_0");
 					put(grammarAccess.getXClosureAccess().getDeclaredFormalParametersAssignment_1_0_0_1_1(), "rule__XClosure__DeclaredFormalParametersAssignment_1_0_0_1_1");
 					put(grammarAccess.getXClosureAccess().getExplicitSyntaxAssignment_1_0_1(), "rule__XClosure__ExplicitSyntaxAssignment_1_0_1");
@@ -355,6 +373,7 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXNumberLiteralAccess().getValueAssignment_1(), "rule__XNumberLiteral__ValueAssignment_1");
 					put(grammarAccess.getXStringLiteralAccess().getValueAssignment_1(), "rule__XStringLiteral__ValueAssignment_1");
 					put(grammarAccess.getXTypeLiteralAccess().getTypeAssignment_3(), "rule__XTypeLiteral__TypeAssignment_3");
+					put(grammarAccess.getXTypeLiteralAccess().getArrayDimensionsAssignment_4(), "rule__XTypeLiteral__ArrayDimensionsAssignment_4");
 					put(grammarAccess.getXThrowExpressionAccess().getExpressionAssignment_2(), "rule__XThrowExpression__ExpressionAssignment_2");
 					put(grammarAccess.getXReturnExpressionAccess().getExpressionAssignment_2(), "rule__XReturnExpression__ExpressionAssignment_2");
 					put(grammarAccess.getXTryCatchFinallyExpressionAccess().getExpressionAssignment_2(), "rule__XTryCatchFinallyExpression__ExpressionAssignment_2");
@@ -378,6 +397,12 @@ public class GraphViewMappingParser extends AbstractContentAssistParser {
 					put(grammarAccess.getJvmTypeParameterAccess().getConstraintsAssignment_1_0_0(), "rule__JvmTypeParameter__ConstraintsAssignment_1_0_0");
 					put(grammarAccess.getJvmTypeParameterAccess().getConstraintsAssignment_1_0_1(), "rule__JvmTypeParameter__ConstraintsAssignment_1_0_1");
 					put(grammarAccess.getJvmTypeParameterAccess().getConstraintsAssignment_1_1(), "rule__JvmTypeParameter__ConstraintsAssignment_1_1");
+					put(grammarAccess.getXImportSectionAccess().getImportDeclarationsAssignment(), "rule__XImportSection__ImportDeclarationsAssignment");
+					put(grammarAccess.getXImportDeclarationAccess().getStaticAssignment_1_0_0(), "rule__XImportDeclaration__StaticAssignment_1_0_0");
+					put(grammarAccess.getXImportDeclarationAccess().getExtensionAssignment_1_0_1(), "rule__XImportDeclaration__ExtensionAssignment_1_0_1");
+					put(grammarAccess.getXImportDeclarationAccess().getImportedTypeAssignment_1_0_2(), "rule__XImportDeclaration__ImportedTypeAssignment_1_0_2");
+					put(grammarAccess.getXImportDeclarationAccess().getImportedTypeAssignment_1_1(), "rule__XImportDeclaration__ImportedTypeAssignment_1_1");
+					put(grammarAccess.getXImportDeclarationAccess().getImportedNamespaceAssignment_1_2(), "rule__XImportDeclaration__ImportedNamespaceAssignment_1_2");
 				}
 			};
 		}

@@ -3,5 +3,5 @@
    <description name="GraphView update site">
       GraphView update site
    </description>
-   <feature url="features/org.eclipse.xtext.graphview.feature_1.0.1.201303202030.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.1.201303202030"/>
+   <feature url="features/org.eclipse.xtext.graphview.feature_1.0.1.201303221447.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.1.201303221447"/>
 </site>

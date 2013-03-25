@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2012 itemis AG (http://www.itemis.eu) and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ */
 package org.eclipse.xtext.graphview.style.type;
 
 import com.google.inject.Singleton;
@@ -18,9 +25,11 @@ import org.eclipse.xtext.xbase.XFeatureCall;
 import org.eclipse.xtext.xbase.XForLoopExpression;
 import org.eclipse.xtext.xbase.XIfExpression;
 import org.eclipse.xtext.xbase.XInstanceOfExpression;
+import org.eclipse.xtext.xbase.XListLiteral;
 import org.eclipse.xtext.xbase.XNullLiteral;
 import org.eclipse.xtext.xbase.XNumberLiteral;
 import org.eclipse.xtext.xbase.XReturnExpression;
+import org.eclipse.xtext.xbase.XSetLiteral;
 import org.eclipse.xtext.xbase.XStringLiteral;
 import org.eclipse.xtext.xbase.XSwitchExpression;
 import org.eclipse.xtext.xbase.XThrowExpression;
@@ -41,6 +50,10 @@ public class GraphViewStyleTypeProvider extends XbaseTypeProvider {
   public JvmTypeReference type(final XExpression featureCall, final JvmTypeReference rawExpectation, final boolean rawType) {
     if (featureCall instanceof XFeatureCall) {
       return _type((XFeatureCall)featureCall, rawExpectation, rawType);
+    } else if (featureCall instanceof XListLiteral) {
+      return _type((XListLiteral)featureCall, rawExpectation, rawType);
+    } else if (featureCall instanceof XSetLiteral) {
+      return _type((XSetLiteral)featureCall, rawExpectation, rawType);
     } else if (featureCall instanceof XColorLiteral) {
       return _type((XColorLiteral)featureCall, rawExpectation, rawType);
     } else if (featureCall instanceof XAbstractFeatureCall) {
