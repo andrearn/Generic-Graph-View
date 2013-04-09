@@ -24,11 +24,11 @@ public class GraphViewStyleInterpreter extends XbaseInterpreter {
 	}
 
 	
-	protected Object _invokeFeature(JvmIdentifiableElement identifiable, XFeatureCall featureCall, Object receiver,
+	protected Object _featureCallJvmIdentifyableElement(JvmIdentifiableElement identifiable, XFeatureCall featureCall, Object receiver,
 			IEvaluationContext context, CancelIndicator indicator) {
 		Object value = context.getValue(QualifiedName.create(featureCall.getConcreteSyntaxFeatureName()));
 		if (value == null) {
-			super._invokeFeature(identifiable, featureCall, receiver, context, indicator);
+			super._featureCallJvmIdentifyableElement(identifiable, featureCall, receiver, context, indicator);
 		}
 		return value;
 	}

@@ -5,6 +5,7 @@ package org.eclipse.xtext.graphview.style.ui.contentassist;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.*;
+import org.eclipse.xtext.xbase.ui.contentassist.XbaseProposalProvider;
 import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
 import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
 
@@ -14,7 +15,7 @@ import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
  * with a more concrete subtype. 
  */
 @SuppressWarnings("all")
-public class AbstractGraphViewStyleProposalProvider extends org.eclipse.xtext.xbase.ui.contentassist.XbaseProposalProvider {
+public class AbstractGraphViewStyleProposalProvider extends XbaseProposalProvider {
 		
 	public void completeStyleSheet_Imports(EObject model, Assignment assignment, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
 		completeRuleCall(((RuleCall)assignment.getTerminal()), context, acceptor);

@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2012 itemis AG (http://www.itemis.eu) and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- */
 package org.eclipse.xtext.graphview.map.types;
 
 import com.google.common.base.Objects;
@@ -37,7 +30,6 @@ import org.eclipse.xtext.xbase.XCasePart;
 import org.eclipse.xtext.xbase.XCastedExpression;
 import org.eclipse.xtext.xbase.XCatchClause;
 import org.eclipse.xtext.xbase.XClosure;
-import org.eclipse.xtext.xbase.XCollectionLiteral;
 import org.eclipse.xtext.xbase.XConstructorCall;
 import org.eclipse.xtext.xbase.XExpression;
 import org.eclipse.xtext.xbase.XForLoopExpression;
@@ -108,20 +100,22 @@ public class GraphViewMappingTypeProvider extends XbaseTypeProvider {
   public JvmTypeReference typeForIdentifiable(final JvmIdentifiableElement constructor, final boolean rawType) {
     if (constructor instanceof JvmConstructor) {
       return _typeForIdentifiable((JvmConstructor)constructor, rawType);
+    } else if (constructor instanceof JvmGenericType) {
+      return _typeForIdentifiable((JvmGenericType)constructor, rawType);
     } else if (constructor instanceof JvmOperation) {
       return _typeForIdentifiable((JvmOperation)constructor, rawType);
     } else if (constructor instanceof JvmField) {
       return _typeForIdentifiable((JvmField)constructor, rawType);
-    } else if (constructor instanceof JvmGenericType) {
-      return _typeForIdentifiable((JvmGenericType)constructor, rawType);
     } else if (constructor instanceof DiagramMapping) {
       return _typeForIdentifiable((DiagramMapping)constructor, rawType);
-    } else if (constructor instanceof JvmFormalParameter) {
-      return _typeForIdentifiable((JvmFormalParameter)constructor, rawType);
     } else if (constructor instanceof AbstractExpressionMapping) {
       return _typeForIdentifiable((AbstractExpressionMapping)constructor, rawType);
+    } else if (constructor instanceof JvmFormalParameter) {
+      return _typeForIdentifiable((JvmFormalParameter)constructor, rawType);
     } else if (constructor instanceof JvmType) {
       return _typeForIdentifiable((JvmType)constructor, rawType);
+    } else if (constructor instanceof XCasePart) {
+      return _typeForIdentifiable((XCasePart)constructor, rawType);
     } else if (constructor instanceof XSwitchExpression) {
       return _typeForIdentifiable((XSwitchExpression)constructor, rawType);
     } else if (constructor instanceof XVariableDeclaration) {
@@ -147,12 +141,12 @@ public class GraphViewMappingTypeProvider extends XbaseTypeProvider {
       return _expectedType((XAbstractWhileExpression)assignment, reference, index, rawType);
     } else if (assignment instanceof XBlockExpression) {
       return _expectedType((XBlockExpression)assignment, reference, index, rawType);
+    } else if (assignment instanceof XCasePart) {
+      return _expectedType((XCasePart)assignment, reference, index, rawType);
     } else if (assignment instanceof XCastedExpression) {
       return _expectedType((XCastedExpression)assignment, reference, index, rawType);
     } else if (assignment instanceof XClosure) {
       return _expectedType((XClosure)assignment, reference, index, rawType);
-    } else if (assignment instanceof XCollectionLiteral) {
-      return _expectedType((XCollectionLiteral)assignment, reference, index, rawType);
     } else if (assignment instanceof XConstructorCall) {
       return _expectedType((XConstructorCall)assignment, reference, index, rawType);
     } else if (assignment instanceof XForLoopExpression) {
@@ -169,8 +163,6 @@ public class GraphViewMappingTypeProvider extends XbaseTypeProvider {
       return _expectedType((XTryCatchFinallyExpression)assignment, reference, index, rawType);
     } else if (assignment instanceof XVariableDeclaration) {
       return _expectedType((XVariableDeclaration)assignment, reference, index, rawType);
-    } else if (assignment instanceof XCasePart) {
-      return _expectedType((XCasePart)assignment, reference, index, rawType);
     } else if (assignment instanceof XCatchClause) {
       return _expectedType((XCatchClause)assignment, reference, index, rawType);
     } else if (assignment != null) {
