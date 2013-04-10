@@ -20,21 +20,20 @@
    <url>
       <discovery url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/release_0.8/"/>
       <discovery url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+      <discovery label="GEF relaeses" url="http://download.eclipse.org/tools/gef/updates/releases/"/>
+      <discovery label="Xtext Composite Update Site" url="http://download.itemis.de/updates"/>
    </url>
 
    <requires>
       <import feature="org.eclipse.gef" version="3.7.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.xtext.sdk" version="2.4.0" match="equivalent"/>
-      <import plugin="net.ogdf.ogml"/>
-      <import plugin="net.ogdf.bin"/>
-      <import plugin="de.cau.cs.kieler.kiml.ogdf"/>
-      <import plugin="de.cau.cs.kieler.kiml"/>
       <import plugin="de.cau.cs.kieler.core.kgraph"/>
+      <import plugin="de.cau.cs.kieler.kiml"/>
       <import plugin="de.cau.cs.kieler.core"/>
-      <import plugin="de.cau.cs.kieler.kiml.graphviz.layouter"/>
-      <import plugin="de.cau.cs.kieler.kiml.graphviz.dot"/>
-      <import feature="de.cau.cs.kieler.kiml.graphviz.feature" version="0.7.1.qualifier"/>
-      <import feature="de.cau.cs.kieler.kiml.ogdf.feature" version="0.5.1.qualifier"/>
+      <import plugin="de.cau.cs.kieler.kiml.ogdf"/>
+      <import feature="org.eclipse.gef" version="3.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.xtext.sdk" version="2.3.0" match="equivalent"/>
+      <import feature="de.cau.cs.kieler.kiml.graphviz.feature" version="0.7.0.qualifier"/>
+      <import feature="de.cau.cs.kieler.kiml.ogdf.feature" version="0.5.0.qualifier"/>
    </requires>
 
    <plugin
