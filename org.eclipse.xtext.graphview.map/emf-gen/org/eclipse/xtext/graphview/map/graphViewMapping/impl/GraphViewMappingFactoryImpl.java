@@ -1,7 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
  */
 package org.eclipse.xtext.graphview.map.graphViewMapping.impl;
 
@@ -33,7 +30,7 @@ public class GraphViewMappingFactoryImpl extends EFactoryImpl implements GraphVi
 	{
 		try
 		{
-			GraphViewMappingFactory theGraphViewMappingFactory = (GraphViewMappingFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.eclipse.org/xtext/graphview/map/GraphViewMapping"); 
+			GraphViewMappingFactory theGraphViewMappingFactory = (GraphViewMappingFactory)EPackage.Registry.INSTANCE.getEFactory(GraphViewMappingPackage.eNS_URI);
 			if (theGraphViewMappingFactory != null)
 			{
 				return theGraphViewMappingFactory;
@@ -70,7 +67,6 @@ public class GraphViewMappingFactoryImpl extends EFactoryImpl implements GraphVi
 			case GraphViewMappingPackage.ABSTRACT_MAPPING_DEFINITION: return createAbstractMappingDefinition();
 			case GraphViewMappingPackage.ABSTRACT_EXPRESSION_MAPPING: return createAbstractExpressionMapping();
 			case GraphViewMappingPackage.ABSTRACT_MAPPING_REFERENCE: return createAbstractMappingReference();
-			case GraphViewMappingPackage.IMPORT: return createImport();
 			case GraphViewMappingPackage.DIAGRAM_MAPPING: return createDiagramMapping();
 			case GraphViewMappingPackage.NODE_MAPPING: return createNodeMapping();
 			case GraphViewMappingPackage.LABEL_MAPPING: return createLabelMapping();
@@ -113,17 +109,6 @@ public class GraphViewMappingFactoryImpl extends EFactoryImpl implements GraphVi
 	{
 		AbstractMappingReferenceImpl abstractMappingReference = new AbstractMappingReferenceImpl();
 		return abstractMappingReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Import createImport()
-	{
-		ImportImpl import_ = new ImportImpl();
-		return import_;
 	}
 
 	/**
