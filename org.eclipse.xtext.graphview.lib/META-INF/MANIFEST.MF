@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Graphview Runtime Library
 Bundle-SymbolicName: org.eclipse.xtext.graphview.lib
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.draw2d;bundle-version="3.9.0";visibility:=reexport,
  org.eclipse.jface;bundle-version="3.9.0",
