@@ -3,8 +3,8 @@
    <description name="GraphView update site">
       GraphView update site
    </description>
-   <feature url="features/org.eclipse.xtext.graphview.feature_1.0.2.201309041819.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.2.201309041819">
-      <category name="Generic Graphview"/>
+   <feature url="features/org.eclipse.xtext.graphview.feature_1.0.2.201309050729.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.2.201309050729">
+      <category name="Generic Graphview 1.0.2"/>
    </feature>
-   <category-def name="Generic Graphview" label="Generic Graphview"/>
+   <category-def name="Generic Graphview 1.0.2" label="Generic Graphview 1.0.2"/>
 </site>
