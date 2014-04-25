@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: test
+Bundle-Name: Graphview examples
 Bundle-SymbolicName: org.eclipse.xtext.graphview.example
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.3.qualifier
 Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.6.1",
  org.eclipse.jdt.core;bundle-version="3.7.0",
- org.eclipse.xtext.xbase.lib;bundle-version="2.0.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.4.2",
  org.eclipse.xtext.example.fowlerdsl;bundle-version="1.0.0",
  org.eclipse.xtext.example.domainmodel;bundle-version="2.2.0",
  org.eclipse.xtext.graphview.lib;bundle-version="1.0.0",
