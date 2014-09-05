@@ -12,11 +12,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.swt.SWT;
@@ -37,9 +35,6 @@ import org.eclipse.xtext.resource.IReferenceDescription;
 import org.eclipse.xtext.resource.IResourceDescription;
 import org.eclipse.xtext.resource.IResourceDescriptions;
 import org.eclipse.xtext.ui.editor.findrefs.IReferenceFinder;
-import org.eclipse.xtext.ui.editor.findrefs.SimpleLocalResourceAccess;
-import org.eclipse.xtext.ui.refactoring.impl.ProjectUtil;
-import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 import org.eclipse.xtext.util.IAcceptor;
 
 import com.google.common.collect.Lists;
@@ -51,12 +46,6 @@ public class SelectDiagramConfigurationDialog extends Dialog {
 
 	@Inject
 	private IResourceDescriptions index;
-	
-	@Inject
-	private IResourceSetProvider resourceSetProvider;
-
-	@Inject
-	private ProjectUtil projectUtil;
 
 	@Inject
 	private IReferenceFinder referenceFinder;
@@ -158,9 +147,7 @@ public class SelectDiagramConfigurationDialog extends Dialog {
 					references.add(reference);
 				}
 			};
-			IProject project = projectUtil.getProject(selectedMapping.getEObjectURI());
-			ResourceSet rs = resourceSetProvider.get(project);
-			referenceFinder.findAllReferences(Collections.singleton(selectedMapping.getEObjectURI()), new SimpleLocalResourceAccess(rs), referenceAcceptor, new NullProgressMonitor());
+			referenceFinder.findAllReferences(Collections.singleton(selectedMapping.getEObjectURI()), null, referenceAcceptor, new NullProgressMonitor());
 			for (IReferenceDescription reference : references) {
 				IResourceDescription referringResource = index.getResourceDescription(reference.getSourceEObjectUri().trimFragment());
 				for (IEObjectDescription styleSheet : referringResource
