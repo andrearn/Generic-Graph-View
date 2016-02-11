@@ -12,5 +12,8 @@
    <feature url="features/org.eclipse.xtext.graphview.feature_1.0.4.201504020016.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.4.201504020016">
       <category name="Generic Graphview"/>
    </feature>
+   <feature url="features/org.eclipse.xtext.graphview.feature_1.0.5.201602110801.jar" id="org.eclipse.xtext.graphview.feature" version="1.0.5.201602110801">
+      <category name="Generic Graphview"/>
+   </feature>
    <category-def name="Generic Graphview" label="Generic Graphview"/>
 </site>

@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.xtext.graphview.feature"
       label="GraphView"
-      version="1.0.4.qualifier"
+      version="1.0.5.qualifier"
       provider-name="Eclipse Modeling Project">
 
    <description url="http://www.example.com/description">
@@ -30,7 +30,7 @@
       <import plugin="de.cau.cs.kieler.kiml"/>
       <import plugin="de.cau.cs.kieler.core"/>
       <import plugin="de.cau.cs.kieler.kiml.ogdf"/>
-      <import feature="org.eclipse.xtext.sdk" version="2.4.2" match="greaterOrEqual"/>
+      <import feature="org.eclipse.xtext.sdk" version="2.9.0" match="greaterOrEqual"/>
       <import feature="de.cau.cs.kieler.kiml.graphviz.feature" version="0.7.0.qualifier"/>
       <import feature="de.cau.cs.kieler.kiml.ogdf.feature" version="0.5.0.qualifier"/>
    </requires>

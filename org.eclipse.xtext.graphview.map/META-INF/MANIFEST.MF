@@ -2,12 +2,12 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.xtext.graphview.map
 Bundle-Vendor: My Company
-Bundle-Version: 1.0.4.qualifier
+Bundle-Version: 1.0.5.qualifier
 Bundle-SymbolicName: org.eclipse.xtext.graphview.map; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.apache.log4j;bundle-version="1.2.15";visibility:=reexport,
- org.apache.commons.logging;bundle-version="1.0.4";resolution:=optional;visibility:=reexport,
+ org.apache.commons.logging;bundle-version="1.0.5";resolution:=optional;visibility:=reexport,
  org.eclipse.xtext.generator;resolution:=optional,
  org.eclipse.emf.codegen.ecore;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
@@ -20,7 +20,7 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.eclipse.core.runtime,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.xtext.common.types,
- org.eclipse.xtext.graphview.lib;bundle-version="1.0.4",
+ org.eclipse.xtext.graphview.lib;bundle-version="1.0.5",
  org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
 Import-Package: org.apache.log4j,
  org.apache.commons.logging,
