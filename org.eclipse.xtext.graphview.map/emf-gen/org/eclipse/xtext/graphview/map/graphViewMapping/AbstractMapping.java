@@ -13,11 +13,11 @@ import org.eclipse.xtext.xbase.XExpression;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.AbstractMapping#getUnlessCondition <em>Unless Condition</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.AbstractMapping#isHidden <em>Hidden</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.graphview.map.graphViewMapping.GraphViewMappingPackage#getAbstractMapping()
  * @model abstract="true"
@@ -28,10 +28,6 @@ public interface AbstractMapping extends JvmIdentifiableElement
 	/**
 	 * Returns the value of the '<em><b>Unless Condition</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Unless Condition</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unless Condition</em>' containment reference.
 	 * @see #setUnlessCondition(XExpression)
@@ -54,10 +50,6 @@ public interface AbstractMapping extends JvmIdentifiableElement
 	/**
 	 * Returns the value of the '<em><b>Hidden</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Hidden</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Hidden</em>' attribute.
 	 * @see #setHidden(boolean)

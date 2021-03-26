@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.xtext.common.types.impl.JvmIdentifiableElementImpl;
+import org.eclipse.xtext.common.types.impl.JvmIdentifiableElementImplCustom;
 
 import org.eclipse.xtext.graphview.map.graphViewMapping.AbstractMapping;
 import org.eclipse.xtext.graphview.map.graphViewMapping.GraphViewMappingPackage;
@@ -23,15 +23,15 @@ import org.eclipse.xtext.xbase.XExpression;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.AbstractMappingImpl#getUnlessCondition <em>Unless Condition</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.AbstractMappingImpl#isHidden <em>Hidden</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
-public abstract class AbstractMappingImpl extends JvmIdentifiableElementImpl implements AbstractMapping
+public abstract class AbstractMappingImpl extends JvmIdentifiableElementImplCustom implements AbstractMapping
 {
 	/**
 	 * The cached value of the '{@link #getUnlessCondition() <em>Unless Condition</em>}' containment reference.
@@ -257,7 +257,7 @@ public abstract class AbstractMappingImpl extends JvmIdentifiableElementImpl imp
 	{
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (hidden: ");
 		result.append(hidden);
 		result.append(')');

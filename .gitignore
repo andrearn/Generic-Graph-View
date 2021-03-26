@@ -3,3 +3,25 @@ target
 *.java._trace
 *.smap
 
+org.eclipse.xtext.graphview/bin
+org.eclipse.xtext.graphview/.settings
+org.eclipse.xtext.graphview.example/.settings
+org.eclipse.xtext.graphview.lib/bin
+org.eclipse.xtext.graphview.lib/.settings
+org.eclipse.xtext.graphview.map/bin
+org.eclipse.xtext.graphview.map/.settings
+org.eclipse.xtext.graphview.map.ide/bin
+org.eclipse.xtext.graphview.map.ide/.settings
+org.eclipse.xtext.graphview.map.tests/bin
+org.eclipse.xtext.graphview.map.tests/.settings
+org.eclipse.xtext.graphview.map.ui/bin
+org.eclipse.xtext.graphview.map.ui/.settings
+org.eclipse.xtext.graphview.p2.repository/logs.zip
+org.eclipse.xtext.graphview.providers/bin
+org.eclipse.xtext.graphview.providers/.settings
+org.eclipse.xtext.graphview.style/bin
+org.eclipse.xtext.graphview.style/.settings
+org.eclipse.xtext.graphview.style.tests/bin
+org.eclipse.xtext.graphview.style.tests/.settings
+org.eclipse.xtext.graphview.style.ui/bin
+org.eclipse.xtext.graphview.style.ui/.settings

@@ -8,10 +8,10 @@ import org.eclipse.xtext.junit4.IInjectorProvider;
 import com.google.inject.Injector;
 
 public class GraphViewStyleUiInjectorProvider implements IInjectorProvider {
-	
+
 	@Override
 	public Injector getInjector() {
 		return org.eclipse.xtext.graphview.style.ui.internal.GraphViewStyleActivator.getInstance().getInjector("org.eclipse.xtext.graphview.style.GraphViewStyle");
 	}
-	
+
 }

@@ -19,11 +19,11 @@ import org.eclipse.xtext.graphview.map.graphViewMapping.GraphViewMappingPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.AbstractMappingReferenceImpl#getReferencedMapping <em>Referenced Mapping</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.AbstractMappingReferenceImpl#isCall <em>Call</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -233,7 +233,7 @@ public class AbstractMappingReferenceImpl extends AbstractExpressionMappingImpl 
 	{
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (call: ");
 		result.append(call);
 		result.append(')');

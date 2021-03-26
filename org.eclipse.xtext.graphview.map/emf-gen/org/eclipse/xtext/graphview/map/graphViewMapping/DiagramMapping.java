@@ -13,11 +13,11 @@ import org.eclipse.xtext.xtype.XImportSection;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.DiagramMapping#getImportSection <em>Import Section</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.DiagramMapping#getTypeGuard <em>Type Guard</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.graphview.map.graphViewMapping.GraphViewMappingPackage#getDiagramMapping()
  * @model
@@ -28,10 +28,6 @@ public interface DiagramMapping extends AbstractMappingDefinition
 	/**
 	 * Returns the value of the '<em><b>Import Section</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Import Section</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Import Section</em>' containment reference.
 	 * @see #setImportSection(XImportSection)
@@ -54,10 +50,6 @@ public interface DiagramMapping extends AbstractMappingDefinition
 	/**
 	 * Returns the value of the '<em><b>Type Guard</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Guard</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Guard</em>' containment reference.
 	 * @see #setTypeGuard(JvmTypeReference)

@@ -11,10 +11,10 @@ import org.eclipse.xtext.xbase.XExpression;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.style.graphViewStyle.XColorLiteral#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.graphview.style.graphViewStyle.GraphViewStylePackage#getXColorLiteral()
  * @model
@@ -25,10 +25,6 @@ public interface XColorLiteral extends XExpression
 	/**
 	 * Returns the value of the '<em><b>Color</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Color</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Color</em>' attribute.
 	 * @see #setColor(String)

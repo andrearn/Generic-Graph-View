@@ -10,11 +10,11 @@ package org.eclipse.xtext.graphview.map.graphViewMapping;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.EdgeMapping#getSourceMapping <em>Source Mapping</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.EdgeMapping#getTargetMapping <em>Target Mapping</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.xtext.graphview.map.graphViewMapping.GraphViewMappingPackage#getEdgeMapping()
  * @model
@@ -25,10 +25,6 @@ public interface EdgeMapping extends AbstractMappingDefinition, AbstractExpressi
 	/**
 	 * Returns the value of the '<em><b>Source Mapping</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Mapping</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Mapping</em>' containment reference.
 	 * @see #setSourceMapping(EdgeEndMapping)
@@ -51,10 +47,6 @@ public interface EdgeMapping extends AbstractMappingDefinition, AbstractExpressi
 	/**
 	 * Returns the value of the '<em><b>Target Mapping</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Mapping</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Mapping</em>' containment reference.
 	 * @see #setTargetMapping(EdgeEndMapping)

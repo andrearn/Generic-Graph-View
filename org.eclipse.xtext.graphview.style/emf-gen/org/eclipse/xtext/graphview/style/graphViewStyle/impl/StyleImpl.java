@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 import org.eclipse.xtext.common.types.JvmTypeReference;
 
-import org.eclipse.xtext.common.types.impl.JvmIdentifiableElementImpl;
+import org.eclipse.xtext.common.types.impl.JvmIdentifiableElementImplCustom;
 
 import org.eclipse.xtext.graphview.map.graphViewMapping.AbstractMapping;
 
@@ -33,16 +33,16 @@ import org.eclipse.xtext.xbase.XExpression;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.style.graphViewStyle.impl.StyleImpl#getMappings <em>Mappings</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.style.graphViewStyle.impl.StyleImpl#getJavaClass <em>Java Class</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.style.graphViewStyle.impl.StyleImpl#getExpression <em>Expression</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
-public class StyleImpl extends JvmIdentifiableElementImpl implements Style
+public class StyleImpl extends JvmIdentifiableElementImplCustom implements Style
 {
 	/**
 	 * The cached value of the '{@link #getMappings() <em>Mappings</em>}' reference list.

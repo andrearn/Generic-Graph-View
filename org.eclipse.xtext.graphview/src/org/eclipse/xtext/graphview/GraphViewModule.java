@@ -15,7 +15,7 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.eclipse.xtext.common.types.access.IJvmTypeProvider;
 import org.eclipse.xtext.common.types.access.jdt.JdtTypeProviderFactory;
 import org.eclipse.xtext.graphview.map.IInstanceMapper;
-import org.eclipse.xtext.graphview.map.ui.internal.GraphViewMappingActivator;
+import org.eclipse.xtext.graphview.map.ui.internal.MapActivator;
 import org.eclipse.xtext.graphview.style.IStyler;
 import org.eclipse.xtext.graphview.style.ui.internal.GraphViewStyleActivator;
 import org.eclipse.xtext.resource.IResourceDescriptions;
@@ -43,7 +43,7 @@ public class GraphViewModule extends AbstractModule {
 
 		bind(IInstanceMapper.class).toProvider(new Provider<IInstanceMapper>() {
 			public IInstanceMapper get() {
-				return GraphViewMappingActivator.getInstance().getInjector("org.eclipse.xtext.graphview.map.GraphViewMapping")
+				return MapActivator.getInstance().getInjector("org.eclipse.xtext.graphview.map.GraphViewMapping")
 						.getInstance(IInstanceMapper.class);
 			}
 		});

@@ -23,13 +23,13 @@ import org.eclipse.xtext.xbase.XExpression;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.EdgeMappingImpl#isMulti <em>Multi</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.EdgeMappingImpl#getExpression <em>Expression</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.EdgeMappingImpl#getSourceMapping <em>Source Mapping</em>}</li>
  *   <li>{@link org.eclipse.xtext.graphview.map.graphViewMapping.impl.EdgeMappingImpl#getTargetMapping <em>Target Mapping</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -439,7 +439,7 @@ public class EdgeMappingImpl extends AbstractMappingDefinitionImpl implements Ed
 	{
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (multi: ");
 		result.append(multi);
 		result.append(')');

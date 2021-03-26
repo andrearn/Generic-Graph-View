@@ -81,7 +81,7 @@ public class GraphViewStylePackageImpl extends EPackageImpl implements GraphView
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link GraphViewStylePackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -96,12 +96,15 @@ public class GraphViewStylePackageImpl extends EPackageImpl implements GraphView
 		if (isInited) return (GraphViewStylePackage)EPackage.Registry.INSTANCE.getEPackage(GraphViewStylePackage.eNS_URI);
 
 		// Obtain or create and register package
-		GraphViewStylePackageImpl theGraphViewStylePackage = (GraphViewStylePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof GraphViewStylePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new GraphViewStylePackageImpl());
+		Object registeredGraphViewStylePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		GraphViewStylePackageImpl theGraphViewStylePackage = registeredGraphViewStylePackage instanceof GraphViewStylePackageImpl ? (GraphViewStylePackageImpl)registeredGraphViewStylePackage : new GraphViewStylePackageImpl();
 
 		isInited = true;
 
 		// Initialize simple dependencies
+		TypesPackage.eINSTANCE.eClass();
 		GraphViewMappingPackage.eINSTANCE.eClass();
+		XbasePackage.eINSTANCE.eClass();
 		XtypePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
@@ -113,7 +116,6 @@ public class GraphViewStylePackageImpl extends EPackageImpl implements GraphView
 		// Mark meta-data to indicate it can't be changed
 		theGraphViewStylePackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(GraphViewStylePackage.eNS_URI, theGraphViewStylePackage);
 		return theGraphViewStylePackage;

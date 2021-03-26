@@ -135,7 +135,7 @@ public class GraphViewMappingPackageImpl extends EPackageImpl implements GraphVi
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link GraphViewMappingPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -150,11 +150,13 @@ public class GraphViewMappingPackageImpl extends EPackageImpl implements GraphVi
 		if (isInited) return (GraphViewMappingPackage)EPackage.Registry.INSTANCE.getEPackage(GraphViewMappingPackage.eNS_URI);
 
 		// Obtain or create and register package
-		GraphViewMappingPackageImpl theGraphViewMappingPackage = (GraphViewMappingPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof GraphViewMappingPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new GraphViewMappingPackageImpl());
+		Object registeredGraphViewMappingPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		GraphViewMappingPackageImpl theGraphViewMappingPackage = registeredGraphViewMappingPackage instanceof GraphViewMappingPackageImpl ? (GraphViewMappingPackageImpl)registeredGraphViewMappingPackage : new GraphViewMappingPackageImpl();
 
 		isInited = true;
 
 		// Initialize simple dependencies
+		TypesPackage.eINSTANCE.eClass();
 		XbasePackage.eINSTANCE.eClass();
 		XtypePackage.eINSTANCE.eClass();
 
@@ -167,7 +169,6 @@ public class GraphViewMappingPackageImpl extends EPackageImpl implements GraphVi
 		// Mark meta-data to indicate it can't be changed
 		theGraphViewMappingPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(GraphViewMappingPackage.eNS_URI, theGraphViewMappingPackage);
 		return theGraphViewMappingPackage;

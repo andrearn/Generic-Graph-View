@@ -193,6 +193,7 @@ public class GraphViewStyleAdapterFactory extends AdapterFactoryImpl
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.eclipse.xtext.xbase.XExpression
+	 * @since 2.7
 	 * @generated
 	 */
 	public Adapter createXExpressionAdapter()
