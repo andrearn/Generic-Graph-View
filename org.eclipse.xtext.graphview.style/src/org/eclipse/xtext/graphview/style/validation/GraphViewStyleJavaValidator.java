@@ -20,7 +20,7 @@ import org.eclipse.xtext.xbase.typesystem.util.CommonTypeComputationServices;
 
 import com.google.inject.Inject;
 
-public class GraphViewStyleJavaValidator extends AbstractGraphViewStyleJavaValidator {
+public class GraphViewStyleJavaValidator extends GraphViewStyleValidator {
 
 	@Inject
 	private CommonTypeComputationServices services;

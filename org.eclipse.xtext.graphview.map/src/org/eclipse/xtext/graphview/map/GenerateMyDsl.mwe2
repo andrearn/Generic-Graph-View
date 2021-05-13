@@ -36,10 +36,6 @@ Workflow {
 			project = StandardProjectConfig {
 				baseName = "${projectName}"
 				rootPath = rootPath
-//				runtime = {
-//					enabled = true
-//					ecoreModel = "model/GraphViewMapping.ecore"
-//				}
 				runtimeTest = {
 					enabled = true
 				}
@@ -50,7 +46,7 @@ Workflow {
 					enabled = true
 				}
 				genericIde = {
-					enabled = false
+					enabled = true
 				}
 				createEclipseMetaData = true
 			}

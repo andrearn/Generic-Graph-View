@@ -21,17 +21,19 @@ Require-Bundle: org.eclipse.xtext.graphview.style;bundle-version="1.0.7";visibil
  org.eclipse.xtext.graphview.map;bundle-version="1.0.7",
  org.eclipse.xtext.graphview.lib;bundle-version="1.0.7",
  org.eclipse.jdt.debug.ui,
- org.eclipse.jdt.debug.ui
+ org.eclipse.jdt.debug.ui,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optional,
+ org.eclipse.xtext.graphview.style.ide;bundle-version="0.0.1"
 Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.eclipse.xtext.graphview.style.ui,
  org.eclipse.xtext.graphview.style.ui.contentassist,
- org.eclipse.xtext.graphview.style.ui.contentassist.antlr,
- org.eclipse.xtext.graphview.style.ui.contentassist.antlr.internal,
  org.eclipse.xtext.graphview.style.ui.highlighting,
  org.eclipse.xtext.graphview.style.ui.internal,
  org.eclipse.xtext.graphview.style.ui.labeling,
  org.eclipse.xtext.graphview.style.ui.outline,
- org.eclipse.xtext.graphview.style.ui.quickfix
+ org.eclipse.xtext.graphview.style.ui.quickfix,
+ org.eclipse.xtext.graphview.style.ui.editor
 Bundle-Activator: org.eclipse.xtext.graphview.style.ui.internal.GraphViewStyleActivator

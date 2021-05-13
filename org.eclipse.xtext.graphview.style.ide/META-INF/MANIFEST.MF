@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.xtext.graphview.style.ide
+Bundle-SymbolicName: org.eclipse.xtext.graphview.style.ide;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.xtext.graphview.style.ide.contentassist.antlr,
+ org.eclipse.xtext.graphview.style.ide.contentassist.antlr.internal
+Require-Bundle: org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.xtext.graphview.style;bundle-version="1.0.7"
+Automatic-Module-Name: org.eclipse.xtext.graphview.style.ide
