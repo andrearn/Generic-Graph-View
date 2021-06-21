@@ -1691,8 +1691,8 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_COLOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6585:12: ( '#' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // InternalGraphViewStyle.g:6585:14: '#' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // InternalGraphViewStyle.g:6256:12: ( '#' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // InternalGraphViewStyle.g:6256:14: '#' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             match('#'); 
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
@@ -1765,10 +1765,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6587:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
-            // InternalGraphViewStyle.g:6587:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // InternalGraphViewStyle.g:6258:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
+            // InternalGraphViewStyle.g:6258:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             {
-            // InternalGraphViewStyle.g:6587:12: ( '0x' | '0X' )
+            // InternalGraphViewStyle.g:6258:12: ( '0x' | '0X' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1796,7 +1796,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6587:13: '0x'
+                    // InternalGraphViewStyle.g:6258:13: '0x'
                     {
                     match("0x"); 
 
@@ -1804,7 +1804,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalGraphViewStyle.g:6587:18: '0X'
+                    // InternalGraphViewStyle.g:6258:18: '0X'
                     {
                     match("0X"); 
 
@@ -1814,7 +1814,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
             }
 
-            // InternalGraphViewStyle.g:6587:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
+            // InternalGraphViewStyle.g:6258:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
             int cnt2=0;
             loop2:
             do {
@@ -1852,7 +1852,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                 cnt2++;
             } while (true);
 
-            // InternalGraphViewStyle.g:6587:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // InternalGraphViewStyle.g:6258:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -1861,10 +1861,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6587:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // InternalGraphViewStyle.g:6258:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     {
                     match('#'); 
-                    // InternalGraphViewStyle.g:6587:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // InternalGraphViewStyle.g:6258:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -1882,7 +1882,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // InternalGraphViewStyle.g:6587:64: ( 'b' | 'B' ) ( 'i' | 'I' )
+                            // InternalGraphViewStyle.g:6258:64: ( 'b' | 'B' ) ( 'i' | 'I' )
                             {
                             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                                 input.consume();
@@ -1906,7 +1906,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // InternalGraphViewStyle.g:6587:84: ( 'l' | 'L' )
+                            // InternalGraphViewStyle.g:6258:84: ( 'l' | 'L' )
                             {
                             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                                 input.consume();
@@ -1945,11 +1945,11 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6589:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // InternalGraphViewStyle.g:6589:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // InternalGraphViewStyle.g:6260:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // InternalGraphViewStyle.g:6260:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // InternalGraphViewStyle.g:6589:21: ( '0' .. '9' | '_' )*
+            // InternalGraphViewStyle.g:6260:21: ( '0' .. '9' | '_' )*
             loop5:
             do {
                 int alt5=2;
@@ -1998,11 +1998,11 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6591:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
-            // InternalGraphViewStyle.g:6591:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // InternalGraphViewStyle.g:6262:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
+            // InternalGraphViewStyle.g:6262:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             {
             mRULE_INT(); 
-            // InternalGraphViewStyle.g:6591:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
+            // InternalGraphViewStyle.g:6262:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2011,7 +2011,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6591:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
+                    // InternalGraphViewStyle.g:6262:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
                     {
                     if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                         input.consume();
@@ -2022,7 +2022,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // InternalGraphViewStyle.g:6591:36: ( '+' | '-' )?
+                    // InternalGraphViewStyle.g:6262:36: ( '+' | '-' )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -2055,7 +2055,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
             }
 
-            // InternalGraphViewStyle.g:6591:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // InternalGraphViewStyle.g:6262:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -2067,7 +2067,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6591:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
+                    // InternalGraphViewStyle.g:6262:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
                     {
                     if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                         input.consume();
@@ -2091,7 +2091,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalGraphViewStyle.g:6591:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
+                    // InternalGraphViewStyle.g:6262:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
                     {
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='L'||input.LA(1)=='d'||input.LA(1)=='f'||input.LA(1)=='l' ) {
                         input.consume();
@@ -2124,10 +2124,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6593:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // InternalGraphViewStyle.g:6593:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalGraphViewStyle.g:6264:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // InternalGraphViewStyle.g:6264:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // InternalGraphViewStyle.g:6593:11: ( '^' )?
+            // InternalGraphViewStyle.g:6264:11: ( '^' )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2136,7 +2136,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6593:11: '^'
+                    // InternalGraphViewStyle.g:6264:11: '^'
                     {
                     match('^'); 
 
@@ -2154,7 +2154,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalGraphViewStyle.g:6593:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalGraphViewStyle.g:6264:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop10:
             do {
                 int alt10=2;
@@ -2203,10 +2203,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6595:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
-            // InternalGraphViewStyle.g:6595:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalGraphViewStyle.g:6266:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
+            // InternalGraphViewStyle.g:6266:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             {
-            // InternalGraphViewStyle.g:6595:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalGraphViewStyle.g:6266:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2224,10 +2224,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt15) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6595:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
+                    // InternalGraphViewStyle.g:6266:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
                     {
                     match('\"'); 
-                    // InternalGraphViewStyle.g:6595:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalGraphViewStyle.g:6266:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop11:
                     do {
                         int alt11=3;
@@ -2243,7 +2243,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // InternalGraphViewStyle.g:6595:21: '\\\\' .
+                    	    // InternalGraphViewStyle.g:6266:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2251,7 +2251,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalGraphViewStyle.g:6595:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalGraphViewStyle.g:6266:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2271,7 +2271,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalGraphViewStyle.g:6595:44: ( '\"' )?
+                    // InternalGraphViewStyle.g:6266:44: ( '\"' )?
                     int alt12=2;
                     int LA12_0 = input.LA(1);
 
@@ -2280,7 +2280,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     switch (alt12) {
                         case 1 :
-                            // InternalGraphViewStyle.g:6595:44: '\"'
+                            // InternalGraphViewStyle.g:6266:44: '\"'
                             {
                             match('\"'); 
 
@@ -2293,10 +2293,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalGraphViewStyle.g:6595:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
+                    // InternalGraphViewStyle.g:6266:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
                     {
                     match('\''); 
-                    // InternalGraphViewStyle.g:6595:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalGraphViewStyle.g:6266:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop13:
                     do {
                         int alt13=3;
@@ -2312,7 +2312,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
                         switch (alt13) {
                     	case 1 :
-                    	    // InternalGraphViewStyle.g:6595:55: '\\\\' .
+                    	    // InternalGraphViewStyle.g:6266:55: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -2320,7 +2320,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalGraphViewStyle.g:6595:62: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalGraphViewStyle.g:6266:62: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2340,7 +2340,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalGraphViewStyle.g:6595:79: ( '\\'' )?
+                    // InternalGraphViewStyle.g:6266:79: ( '\\'' )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -2349,7 +2349,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     switch (alt14) {
                         case 1 :
-                            // InternalGraphViewStyle.g:6595:79: '\\''
+                            // InternalGraphViewStyle.g:6266:79: '\\''
                             {
                             match('\''); 
 
@@ -2380,12 +2380,12 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6597:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalGraphViewStyle.g:6597:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalGraphViewStyle.g:6268:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalGraphViewStyle.g:6268:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalGraphViewStyle.g:6597:24: ( options {greedy=false; } : . )*
+            // InternalGraphViewStyle.g:6268:24: ( options {greedy=false; } : . )*
             loop16:
             do {
                 int alt16=2;
@@ -2410,7 +2410,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
                 switch (alt16) {
             	case 1 :
-            	    // InternalGraphViewStyle.g:6597:52: .
+            	    // InternalGraphViewStyle.g:6268:52: .
             	    {
             	    matchAny(); 
 
@@ -2440,12 +2440,12 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6599:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalGraphViewStyle.g:6599:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalGraphViewStyle.g:6270:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalGraphViewStyle.g:6270:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalGraphViewStyle.g:6599:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalGraphViewStyle.g:6270:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop17:
             do {
                 int alt17=2;
@@ -2458,7 +2458,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // InternalGraphViewStyle.g:6599:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalGraphViewStyle.g:6270:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2478,7 +2478,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalGraphViewStyle.g:6599:40: ( ( '\\r' )? '\\n' )?
+            // InternalGraphViewStyle.g:6270:40: ( ( '\\r' )? '\\n' )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -2487,9 +2487,9 @@ public class InternalGraphViewStyleLexer extends Lexer {
             }
             switch (alt19) {
                 case 1 :
-                    // InternalGraphViewStyle.g:6599:41: ( '\\r' )? '\\n'
+                    // InternalGraphViewStyle.g:6270:41: ( '\\r' )? '\\n'
                     {
-                    // InternalGraphViewStyle.g:6599:41: ( '\\r' )?
+                    // InternalGraphViewStyle.g:6270:41: ( '\\r' )?
                     int alt18=2;
                     int LA18_0 = input.LA(1);
 
@@ -2498,7 +2498,7 @@ public class InternalGraphViewStyleLexer extends Lexer {
                     }
                     switch (alt18) {
                         case 1 :
-                            // InternalGraphViewStyle.g:6599:41: '\\r'
+                            // InternalGraphViewStyle.g:6270:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2530,10 +2530,10 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6601:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalGraphViewStyle.g:6601:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalGraphViewStyle.g:6272:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalGraphViewStyle.g:6272:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalGraphViewStyle.g:6601:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalGraphViewStyle.g:6272:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt20=0;
             loop20:
             do {
@@ -2587,8 +2587,8 @@ public class InternalGraphViewStyleLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalGraphViewStyle.g:6603:16: ( . )
-            // InternalGraphViewStyle.g:6603:18: .
+            // InternalGraphViewStyle.g:6274:16: ( . )
+            // InternalGraphViewStyle.g:6274:18: .
             {
             matchAny(); 
 
